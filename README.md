@@ -17,7 +17,7 @@ This project aims to predict customer churn — identifying customers likely to 
    - **Tenure** – Duration of customer relationship  
    - **Complaint Descends Last Order** – Frequency of customer complaints  
    - **Cashback Amount** – Total cashback received  
-   - **Merity Status** – Loyalty or membership status  
+   - **Marital Status** – Customer’s marital status influencing loyalty and churn  
 5. **Model Building** – Applied Logistic Regression and Decision Tree classifiers.  
 6. **Model Evaluation** – Evaluated model accuracy and interpreted key churn indicators.
 
