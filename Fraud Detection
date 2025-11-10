@@ -1,7 +1,7 @@
-# 🔐 Fraud Detection
+# 🧠 Churn Prediction
 
 ### 📌 Overview
-This project focuses on detecting fraudulent transactions using machine learning techniques. The goal is to identify abnormal patterns in transaction data and flag potential fraud cases effectively.
+This project aims to predict customer churn — identifying customers likely to discontinue a service. The goal is to help businesses take proactive steps to retain customers and reduce revenue loss.
 
 ### 💻 Tools & Technologies
 - Python  
@@ -10,18 +10,23 @@ This project focuses on detecting fraudulent transactions using machine learning
 - Jupyter Notebook  
 
 ### 🔍 Process
-1. **Dataset Used** – A publicly available ready-made dataset containing financial transaction records.  
-2. **Data Preprocessing** – Cleaned and standardized the dataset for analysis.  
-3. **Exploratory Data Analysis (EDA)** – Visualized transaction patterns to understand normal vs. fraudulent behaviors.  
-4. **Model Building** – Applied the **Isolation Forest** algorithm to detect anomalies representing possible fraudulent transactions.  
-5. **Model Evaluation** – Evaluated results using metrics such as accuracy, precision, and recall.
+1. **Data Collection** – Used a customer dataset containing transaction and service information.  
+2. **Data Preprocessing** – Cleaned missing data, encoded categorical variables, and normalized numerical values.  
+3. **Exploratory Data Analysis (EDA)** – Visualized churn distribution and identified customer behavior patterns.  
+4. **Feature Selection** – Determined key features influencing churn such as:  
+   - **Tenure** – Duration of customer relationship  
+   - **Complaint Descends Last Order** – Frequency of customer complaints  
+   - **Cashback Amount** – Total cashback received  
+   - **Merity Status** – Loyalty or membership status  
+5. **Model Building** – Applied Logistic Regression and Decision Tree classifiers.  
+6. **Model Evaluation** – Evaluated model accuracy and interpreted key churn indicators.
 
 ### 📊 Results
-- The Isolation Forest model effectively identified outliers corresponding to fraudulent activity.  
-- Provided insights into the characteristics and frequency of suspicious transactions.
+- Successfully identified churn-prone customers using behavioral and transactional patterns.  
+- Lower tenure, frequent complaints, and lower cashback amounts were found to be strong churn indicators.
 
 ### 🚀 Future Scope
-Incorporate other unsupervised techniques like One-Class SVM and Autoencoders, and deploy the model using Streamlit for interactive fraud detection visualization.
+Enhance model performance using Random Forest and XGBoost, and deploy it using Streamlit for real-time churn prediction dashboards.
 
 ---
 
