@@ -1,7 +1,7 @@
-# 🧠 Churn Prediction
+# 🔐 Fraud Detection
 
 ### 📌 Overview
-This project aims to predict customer churn — identifying customers likely to discontinue a service. The goal is to help businesses take proactive steps to retain customers and reduce revenue loss.
+This project focuses on detecting fraudulent transactions using machine learning techniques. The goal is to identify abnormal patterns in transaction data and flag potential fraud cases effectively.
 
 ### 💻 Tools & Technologies
 - Python  
@@ -10,18 +10,18 @@ This project aims to predict customer churn — identifying customers likely to 
 - Jupyter Notebook  
 
 ### 🔍 Process
-1. **Data Collection** – Used the Telco Customer Churn dataset.  
-2. **Data Preprocessing** – Handled missing values, encoded categorical data, and normalized numerical features.  
-3. **Exploratory Data Analysis (EDA)** – Visualized churn distribution and customer behavior patterns.  
-4. **Model Building** – Implemented Logistic Regression and Decision Tree classifiers.  
-5. **Model Evaluation** – Measured performance using accuracy, confusion matrix, and ROC curve.
+1. **Dataset Used** – A publicly available ready-made dataset containing financial transaction records.  
+2. **Data Preprocessing** – Cleaned and standardized the dataset for analysis.  
+3. **Exploratory Data Analysis (EDA)** – Visualized transaction patterns to understand normal vs. fraudulent behaviors.  
+4. **Model Building** – Applied the **Isolation Forest** algorithm to detect anomalies representing possible fraudulent transactions.  
+5. **Model Evaluation** – Evaluated results using metrics such as accuracy, precision, and recall.
 
 ### 📊 Results
-- Identified key churn factors such as contract type, monthly charges, and tenure.  
-- Built a model with high prediction accuracy, providing business insights for customer retention.  
+- The Isolation Forest model effectively identified outliers corresponding to fraudulent activity.  
+- Provided insights into the characteristics and frequency of suspicious transactions.
 
 ### 🚀 Future Scope
-Enhance model performance using ensemble methods like Random Forest and XGBoost, and deploy it using Streamlit for real-time predictions.
+Incorporate other unsupervised techniques like One-Class SVM and Autoencoders, and deploy the model using Streamlit for interactive fraud detection visualization.
 
 ---
 
